@@ -1,0 +1,153 @@
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f8f7;
+}
+
+.part1 {
+  text-align: center;
+  padding: 50px 20px;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.part2 {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding-top: 20px;
+}
+
+.card {
+  background-color: antiquewhite;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+
+
+.card img {
+  width: 100%;
+  border-radius: 3px;
+}
+
+.card h1 {
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+.card p {
+  font-size: 14px;
+  color: #444;
+}
+
+/* Footer */
+.footer {
+  margin-top: 100px;
+  background-color: #204E51;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 40px 20px;
+}
+
+.footer h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.footer p {
+  margin-bottom: 20px;
+}
+
+.ico {
+  display: flex;
+  gap: 20px;
+}
+
+.ico i {
+  font-size: 28px;
+  color: white;
+  transition: transform 0.3s ease;
+}
+
+.ico i:hover {
+  transform: scale(1.2);
+  color: #b5e0da;
+}
+
+.bidix {
+  display: flex;
+  gap: 40px;
+}
+
+.gees {
+  display: flex;
+  gap: 30px;
+}
+
+.bidix ul {
+  list-style: none;
+  padding: 0;
+}
+
+.bidix li {
+  margin-top: 10px;
+  color: white;
+  font-size: 14px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .part2 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .bidix {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+}
+
+
+
+@media(max-width: 390px){
+    .part1{
+        display: flex;
+        flex-direction: column;
+        padding-right: 20px;
+
+
+    }
+    
+}
+
+
+@media(min-width: 391px) and (max-width: 450px){
+    .part1{
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        
+    }
+}
+
+
+
+
